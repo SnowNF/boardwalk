@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Boardwalk</string>
+    <string name="login_username_hint">用户名</string>
+    <string name="login_is_demo_account">This account doesn\'t seems to have a Minecraft user linked to it. Did you buy Minecraft? You can play the Demo version with the "Play Demo" button below.</string>
+    <string name="login_logging_in">登录&#8230;</string>
+    <string name="login_error">无法登录：</string>
+    <string name="login_button">没什么用...</string>
+    <string name="login_extra_info_text">Boardwalk build for Android 6+ \n 使用前请在终端输入：\n setenforce 0 \n am restart
+</string>
+    <string name="login_import_resource_pack">解压runtime(初次使用请点击)</string>
+
+   
+    <string name="play_offline">离线游玩</string>
+    <string name="play_demo">Play</string>
+    <string name="play_regular">启动minecraft</string>
+    <string name="convert_populating_working_directory">Populating working directory</string>
+    <string name="convert_downloading">下载中...</string>
+    <string name="convert_converting">转换中...</string>
+    <string name="convert_preparing_to_launch_minecraft">正在准备启动Minecraft....</string>
+
+
+    <string name="control_keyboard">Keyboard</string>
+    <string name="control_chat">Chat</string>
+    <string name="control_debug">Debug</string>
+    <string name="controls">Controls</string>
+    <string name="control_primary">Pri</string>
+    <string name="control_secondary">Sec</string>
+    <string name="control_shift">Sft</string>
+    <string name="control_inventory">Inv</string>
+    <string name="control_up">▲</string>
+    <string name="control_jump">■</string>
+    <string name="control_left">◀</string>
+    <string name="control_right">▶</string>
+    <string name="control_down">▼</string>
+    <string name="control_thirdperson">3rd</string>
+
+
+
+    <string name="about_app">关于</string>
+    <string name="about_librarycredits">许多开源贡献者的工作使此应用成为可能。\n 使用的一些开源库是glShim，LWJGL，Gson，dx和jarjar。 特别感谢ptitSeb和lunixbochs编写了glShim，这使得该应用成为可能。\n
+ 此应用程序不隶属于"Mojang AB Minecraft®/TM©2009-2013 Mojang/Notch"</string>
+    <string name="about_copyright">Copyright (c) 2015 Zhuowei Zhang \n ReBuild by LiuJiaRui</string>
+</resources>
