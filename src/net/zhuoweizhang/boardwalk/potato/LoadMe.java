@@ -34,7 +34,7 @@ public class LoadMe {
 			setenv("LIBGL_ES","1");
 			
 			setenv("LD_PRELOAD", runtimePath + "/libboardwalk_preload.so");
-			setenv("OVERRIDE_PROC_SELF_EXE", runtimePath + "/jre/bin/java");
+			setenv("OVERRIDE_PROC_SELF_EXE", runtimePath + "/jdk8u265-b01-jre/bin/java");
 
 			setenv("LIBGL_MIPMAP", "3");
 			setenv("HOME", "/sdcard/boardwalk");
@@ -44,7 +44,7 @@ public class LoadMe {
 			String[] frontArgs = {runtimePath + "/newglibc/lib/ld-linux-armhf.so.3",
 			    "--library-path",
 				runtimePath + "/newglibc/lib:" + runtimePath,
-				runtimePath + "/jre/bin/java",
+				runtimePath + "/jdk8u265-b01-jre/bin/java",
 				"-client", "-Xms64M", "-Xmx"+LauncherActivity.getRAM().toString()+"M",
 				"-cp", mcClassPath,
 				"-Djava.library.path=" + runtimePath};

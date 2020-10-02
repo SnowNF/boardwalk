@@ -135,22 +135,22 @@ public class LauncherActivity extends Activity implements View.OnClickListener, 
 			if(f.exists()){
 				doPreLaunch();
 			}else{
-				Toast.makeText(this,"未解压runtime，请解压",Toast.LENGTH_LONG).show();
+				Toast.makeText(this,"runtime is not extracted,please extract runtime.",Toast.LENGTH_LONG).show();
 			}
 			
 		} else if (v == RootModeButton) {
 			doRoot();
 		} else if (v == importResourcePackButton) {
 			//doBrowseForResourcePack();
-			Toast.makeText(this,"正在解压...",Toast.LENGTH_LONG).show();
+			Toast.makeText(this,"extraing...",Toast.LENGTH_LONG).show();
 			extractThread = new Thread(new ExtractRuntime(this));
 			extractThread.start();
 		}
 	}
 	public void doRoot(){
 		AlertDialog.Builder root_note = new AlertDialog.Builder(LauncherActivity.this);
-		root_note.setTitle("提示");
-		root_note.setMessage("root模式实际上是关闭SELinux，软重启后才能生效，请注意保存重要数据。\n 你也可以手动软重启 \n 执行的命令为： \n setenforce 0 (关闭SELinux) \n am restart (软重启) \n PS：用了多线程，请等待root软件授权完毕");
+		root_note.setTitle("注意");
+		root_note.setMessage("root模式实际上是关闭SELinux，软重启后才能生效，请注意保存正在运行的软件数据。\n 你也可以手动软重启 \n 执行的命令为： \n setenforce 0 (关闭SELinux) \n am restart (软重启) \n PS：用了多线程，请等待root软件授权完毕");
 		root_note.setPositiveButton("关闭SELinux并软重启", new DialogInterface.OnClickListener(){
 
 				@Override

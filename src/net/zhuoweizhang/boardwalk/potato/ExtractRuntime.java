@@ -32,7 +32,7 @@ public class ExtractRuntime implements Runnable {
 			String[] link = new String[]{"ln","-s",libDir+"libbusybox.so",runtimeDirPath+"/busybox"};
 			doExec(link);
 			//extractAsset("busybox");
-			extractTar("oraclejdk8-arm-202.tgz", new File(runtimeDirPath).getAbsolutePath());
+			extractTar("openjdk_8u265b01.tgz", new File(runtimeDirPath).getAbsolutePath());
 			extractTar("glibc.tgz", new File(runtimeDirPath).getAbsolutePath());
 			extractAsset("libboardwalk_preload.so");
 			extractAsset("liblwjgl.so");
@@ -43,12 +43,12 @@ public class ExtractRuntime implements Runnable {
 			extractAsset("lwjgl_util.jar");
 			extractAsset("librarylwjglopenal-20100824.jar");
 				Looper.prepare();
-			Toast.makeText(context,"解压成功",Toast.LENGTH_LONG).show();
+			Toast.makeText(context,"extra runtime successfully",Toast.LENGTH_LONG).show();
 				Looper.loop();
 		} catch (Exception e) {
 			e.printStackTrace();
 				Looper.prepare();
-			Toast.makeText(context,"解压失败："+e.toString()+"\n 请尝试切换到root模式",Toast.LENGTH_LONG).show();
+			Toast.makeText(context,"fail to extra runtime: "+e.toString()+"\n please try to use root.",Toast.LENGTH_LONG).show();
 				Looper.loop();
 		}
 	}

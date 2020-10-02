@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Boardwalk</string>
-    <string name="login_username_hint">用户名</string>
+    <string name="login_username_hint">Username(offline)</string>
     <string name="login_is_demo_account">This account doesn\'t seems to have a Minecraft user linked to it. Did you buy Minecraft? You can play the Demo version with the "Play Demo" button below.</string>
     <string name="login_logging_in">登录&#8230;</string>
     <string name="login_error">无法登录：</string>
-    <string name="login_button">没什么用...</string>
-    <string name="login_extra_info_text">Boardwalk build for Android 6+ \n 使用前请在终端输入：\n setenforce 0 \n am restart
-</string>
-    <string name="login_import_resource_pack">解压runtime(初次使用请点击)</string>
+    <string name="login_button">nothing...</string>
+    <string name="login_extra_info_text">Boardwalk build for Android 6+ \nhttps://github.com/SnowNF/boardwalk\nIf can\'t play,please try \"use root\" or reduce ram.</string>
+    <string name="login_import_resource_pack">extra runtime</string>
 
    
     <string name="play_offline">离线游玩</string>
     <string name="play_demo">Play</string>
     <string name="play_regular">启动minecraft</string>
     <string name="convert_populating_working_directory">Populating working directory</string>
-    <string name="convert_downloading">下载中...</string>
-    <string name="convert_converting">转换中...</string>
+    <string name="convert_downloading">正在下载...</string>
+    <string name="convert_converting">正在转换...</string>
     <string name="convert_preparing_to_launch_minecraft">正在准备启动Minecraft....</string>
 
 

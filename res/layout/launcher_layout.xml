@@ -27,7 +27,7 @@
 				android:layout_width="fill_parent"
 				android:layout_height="wrap_content"
 				android:singleLine="true"
-				android:hint="内存"
+				android:hint="RAM(less than 1024MB)"
 				android:inputType="number"/>
 
 			<Button
@@ -46,7 +46,7 @@
 				android:id="@+id/launcher_root_mode_button"
 				android:layout_width="fill_parent"
 				android:layout_height="wrap_content"
-				android:text="root模式(非必须,用于安卓6+)"/>
+				android:text="use root.(used for Android6+)"/>
 
 			<Button
 				android:id="@+id/launcher_import_resource_pack_button"
